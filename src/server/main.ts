@@ -6,6 +6,6 @@ import * as path from "path";
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
   app.useStaticAssets(path.resolve(__dirname + "../../dist"), {});
-  await app.listen(3000);
+  await app.listen(3333);
 }
 bootstrap();

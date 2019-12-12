@@ -5,6 +5,10 @@
 
 > The client is react.js, the server is nest.js, and the bundler is fusebox
 
+## Stack
+
+redux, redux-saga
+
 ## Install
 
 ```sh
