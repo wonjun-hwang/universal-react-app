@@ -10,8 +10,8 @@ export class AppController {
     res.sendFile("index.html");
   }
 
-  @Get("/hello")
-  getHello(): string {
-    return this.appService.getHello();
+  @Get("/posts")
+  async getPosts(@Res() res: any) {
+    res.json(await this.appService.getPosts());
   }
 }

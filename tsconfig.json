@@ -5,13 +5,14 @@
         "removeComments": true,
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
-        "target": "esnext",
+        "target": "es5",
         "jsx": "react",
         "sourceMap": true,
         "outDir": "./dist",
         "allowSyntheticDefaultImports": true,
         "baseUrl": "./src",
-        "incremental": true
+        "incremental": true,
+        "lib":["ESNext","DOM"]
     },
     "exclude": ["node_modules"]
 }

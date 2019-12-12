@@ -32,7 +32,7 @@ Sparky.task("default", ["clean"], () => {
     .bundle("client/app")
     .target("browser@esnext")
     .watch("client/**")
-    .hmr({ socketURI: `http://localhost:4444`})
+    .hmr({ socketURI: `wss://localhost:4444`})
     .instructions(" > client/app.tsx");
 
   fuse.run();
